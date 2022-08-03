@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada  -->
+
+<html lang="pt-br">
+    <head>
+        <title>Formulario</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Mateus">
+        <meta name="description" content="Descrição bacanuda">    
+        <meta name="keywords" content="html5, CSS">  
+
+        <style>
+            .formlogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: consolas;
+            }
+            .formlogin label{
+                margin-top: 25px;
+                display: block;
+                margin-bottom: 5px;
+            }
+            .formlogin legend{
+                background: white;
+                padding: 10px;
+            }
+            .formlogin fieldset{
+                background: #ccc;
+            }
+            #user, #senha, .btn{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 15px;
+                font-size: 16px;     
+                border:none;           
+            }
+            #user, #senha{
+                background: #ddd;
+            }
+            #user:focus, #senha:focus{
+                background: white;
+            }
+            .btn{
+                margin-top: 15px;
+            }
+            #user{
+                margin-bottom: 15px;
+            }
+
+
+        </style>
+              
+    </head>
+    <body>
+        <h1>Exemplo Formulario</h1>
+
+        <form action="#" method="post" class="formlogin">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="user">Digite o seu Usuario</label>
+                <input type="text" id="user" name="user" autofocus>
+
+                <label for="senha">Digite a Senha</label>
+                <input type="password" id="senha" name="pass">
+
+                <input type="submit" value="Logar" class="btn">
+            </fieldset>
+        </form>
+        
+    </body>
+</html>

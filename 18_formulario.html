@@ -1,0 +1,97 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada  -->
+
+<html lang="pt-br">
+    <head>
+        <title>Formulario</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Mateus">
+        <meta name="description" content="Descrição bacanuda">    
+        <meta name="keywords" content="html5, CSS">     
+              
+    </head>
+    <body>
+        <h1>Exemplo Formulario</h1>
+
+        <form action="#" method="post" class="formlogin">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>Email</label>
+                <input type="email" required placeholder="Digite um email valido">
+
+                <br>
+                <label>Numero de Filhos</label>
+                <input type="number" min="0">
+
+                <br>
+                <label>Nascimento</label>
+                <input type="date">
+
+                <br>                
+                <p>Sexo</p>
+                <label>
+                    <input type="radio" name="sexo" value="M">Masculino
+                </label>               
+                <label>
+                    <input type="radio" name="sexo" value="F">Feminino
+                </label> 
+                <br>
+                <input type="hidden" nome="expira" value="2022-03-08">               
+             
+                <br>
+                <label>Estado</label>
+                <select>
+                    <option value="0">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RJ">Rio de Janeiro</option>
+
+                </select>
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Área de Interesse</legend>
+                <label>
+                    <input type="checkbox" name="html" value="html">HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="css" value="css">CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="js" value="js">JavaScript
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Mensagens</legend>
+                <textarea name="msg" cols="30" rows="10"></textarea>
+
+                <legend>Cotrato</legend>
+                <textarea name="msg" cols="30" rows="10" readonly>Aqui entra o texto do contrato que precisa ser aceito
+                </textarea>
+                <label>
+                    <input type="checkbox" checked>Li e aceito 
+                </label>
+
+                <input type="range" min="0" max="10" step="1">
+                <input type="time">
+                <input type="color">
+
+                <select multiple>
+                    <option>Opção 1</option>
+                    <option>Opção 2</option>
+                    <option>Opção 3</option>
+                    <option>Opção 4</option>
+                    <option>Opção 5</option>
+                 
+                </select>
+            </fieldset>
+            
+            <br>
+            <input type="submit" value="Enviar"> 
+            <input type="button" value="Button"> 
+            <input type="reset" value="Reset"> 
+        </form>
+        
+    </body>
+</html>
